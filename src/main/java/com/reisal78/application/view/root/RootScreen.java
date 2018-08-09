@@ -2,7 +2,6 @@ package com.reisal78.application.view.root;
 
 import com.reisal78.application.view.base.BaseView;
 import com.reisal78.application.view.base.IContainer;
-import com.reisal78.application.view.main.IMainView;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 
@@ -18,13 +17,11 @@ public class RootScreen extends BaseView implements IRootView, IContainer {
 
     private final IRootPresenter presenter;
 
-    private final IMainView mainView;
 
     @Inject
-    public RootScreen(IRootPresenter presenter, IMainView mainView) {
+    public RootScreen(IRootPresenter presenter) {
         super(presenter);
         this.presenter = presenter;
-        this.mainView = mainView;
     }
 
     @Override
