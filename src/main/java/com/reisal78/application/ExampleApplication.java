@@ -8,10 +8,12 @@ import com.reisal78.application.view.root.RootScreen;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.inject.Inject;
 import java.util.Set;
 
+@Slf4j
 public class ExampleApplication extends Application {
 
 
@@ -32,6 +34,7 @@ public class ExampleApplication extends Application {
         primaryStage.setScene(scene);
         rootScreen.afterShow();
         primaryStage.show();
+        log.debug("test");
     }
 
     public static void main(String[] args) {

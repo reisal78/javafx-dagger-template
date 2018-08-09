@@ -4,7 +4,6 @@ import com.reisal78.application.view.base.BaseView;
 import com.reisal78.application.view.base.IContainer;
 import com.reisal78.application.view.main.IMainView;
 import javafx.scene.Parent;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
 import javax.inject.Inject;
@@ -26,7 +25,6 @@ public class RootScreen extends BaseView implements IRootView, IContainer {
         super(presenter);
         this.presenter = presenter;
         this.mainView = mainView;
-        System.out.println("RootScreen.RootScreen");
     }
 
     @Override

@@ -8,7 +8,6 @@ public class MainPresenter extends BasePresenter<IMainView> implements IMainPres
 
     @Inject
     public MainPresenter() {
-        System.out.println("MainPresenter.MainPresenter");
     }
 
     @Override
